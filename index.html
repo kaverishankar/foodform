@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>FOOD_FORM</title>
+         <link rel="stylesheet" href="food.css">
+         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    </head>
+    <script src="script.js"></script>
+    <style>
+       h1 {
+         font-size: 50px;
+         text-align: center;
+        }
+    </style>
+
+    <body>
+        <div class="contain">
+        
+            <h1 style="font-family: pacifico;">Craving Foody</h1>
+        
+                <fieldset id="field">
+            
+                <label>First Name: 
+                    <input id="fname" type="text"></label>
+                <br>
+                <label>Last Name: 
+                    <input id="lname" type="text"></label>
+                    <br>
+                <label>Address : 
+                    <input type="text" name="address" id="address"></label>
+                <br>
+                <label>Pincode : 
+                    <input type="text" pattern="[0-9]{6}" maxlength="6"  name = "pincode" id="pincode"></label>
+                <br>
+                <label>Gender : 
+                    <input type="radio" name="gender" value="male" id="gender" /> Male
+                    <input type="radio" name="gender" value="female" id="gender" />Female </label>
+                <br>
+                <fieldset>
+                <legend style="color:lawngreen; font-size: 25px;">Choice of food :</legend>
+                    <input type="checkbox" name="check" id="checkbox" value="pizza"/> PIZZA
+                    <input type="checkbox" name="check" id="checkbox" value="burger"/> BURGER
+                    <input type="checkbox" name="check" id="checkbox" value="donut"/> DONUT
+                    <input type="checkbox" name="check" id="checkbox" value="fry"/> FRENCH FRIES
+                    <input type="checkbox" name="check" id="checkbox" value="coke"/> COKE
+                </fieldset>
+                <br>
+                <label>State : 
+                    <input type="text" name="state" id="state"/></label>
+                <br>
+                <label >Country :
+                    <input type="text" name="count" id="count" /></label>
+                <br>
+                <button onclick="btnClick()">SUBMIT</button>
+                <button onclick="clclick()">CLEAR</button>
+
+                </fieldset>
+                <br><br><br>
+            <div id="tables">
+                <table id="table" style="width:70%">
+                    <thead>
+                        <tr>
+                            <th>Order_id</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Address</th>
+                            <th>Pincode</th>
+                            <th>Gender</th>
+                            <th>Choice of Food</th>
+                            <th>State</th>
+                            <th>Country</th>
+                        </tr>
+                    </thead>
+                </table>
+    
+            </div>
+        </div>
+    </body>
+</html>
